@@ -3,9 +3,10 @@ body
     font-family: 'Indie Flower', cursive;
 }
 
-div.lavagna
+section.lavagna
 {
     width: 80%;
+    margin: 50px auto;
     background-color: grey;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +15,7 @@ div.lavagna
     border: 5px solid black;
 }
 
-div.lavagna div
+section.lavagna div
 {
     height: 190px;
     width: 20%;
@@ -25,19 +26,21 @@ div.lavagna div
     transition: transform 0.8s, box-shadow 0.8s;
 }
 
-div.green
+section div:nth-child(n)
 {
-    background-color: rgb(30, 226, 135);
-    transform: rotate(10deg);
-}
-div.yellow
-{
-    background-color: rgb(230, 230, 79);
+    background-image: linear-gradient(rgb(238, 254, 10), rgb(105, 115, 52));
     transform: rotate(-5deg);
 }
-div.violet
+
+section div:nth-child(2n+2)
 {
-    background-color: violet;
+    background-image: linear-gradient(rgb(13, 164, 13), rgb(55, 91, 57));
+    transform: rotate(10deg);
+}
+
+section div:nth-child(3n)
+{
+    background-image: linear-gradient(rgb(244, 31, 240), rgb(94, 51, 96));
     transform: rotate(-9deg);
 }
 
@@ -54,9 +57,10 @@ div p
     padding: 15px 0px 0px 35px;
 }
 
-div.lavagna div:hover
+section.lavagna div:hover
 {
     transform: scale(1.5);
     box-shadow: 4px 4px 8px black;
     z-index: 2;
+    cursor: pointer;
 }
