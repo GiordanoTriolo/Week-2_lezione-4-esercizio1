@@ -1,0 +1,62 @@
+body
+{
+    font-family: 'Indie Flower', cursive;
+}
+
+div.lavagna
+{
+    width: 80%;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    border: 5px solid black;
+}
+
+div.lavagna div
+{
+    height: 190px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 2%;
+    padding-top: 50px;
+    box-shadow: 1px 1px 8px  black;   
+    transition: transform 0.8s, box-shadow 0.8s;
+}
+
+div.green
+{
+    background-color: rgb(30, 226, 135);
+    transform: rotate(10deg);
+}
+div.yellow
+{
+    background-color: rgb(230, 230, 79);
+    transform: rotate(-5deg);
+}
+div.violet
+{
+    background-color: violet;
+    transform: rotate(-9deg);
+}
+
+div h3
+{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+div p
+{
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 15px 0px 0px 35px;
+}
+
+div.lavagna div:hover
+{
+    transform: scale(1.5);
+    box-shadow: 4px 4px 8px black;
+    z-index: 2;
+}
